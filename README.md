@@ -213,3 +213,130 @@ app.listen(port, () => {
 Note: This hand note walks you through setting up a basic Node.js server using Express and connecting it to MongoDB Atlas. Remember to replace placeholder values with your actual credentials and adapt the code as needed for your project.
 
 
+ ## CRUD Operations (Sample Implementation)
+Here's an example of how CRUD operations can be implemented:
+<br>
+
+ ## Create (POST):
+
+```
+app.post('/menu', async (req, res) => {
+    try {
+        const newItem = req.body;
+        const result = await menuCollection.insertOne(newItem);
+        res.json(result.ops[0]);
+    } catch (err) {
+        console.error('Error creating item:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
+## Read (GET)
+
+```
+app.get('/menu', async (req, res) => {
+    try {
+        const result = await menuCollection.find().toArray();
+        res.json(result);
+    } catch (err) {
+        console.error('Error fetching menu:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
+## Update (PUT)
+
+```
+app.put('/menu/:id', async (req, res) => {
+    try {
+        const itemId = req.params.id;
+        const updatedItem = req.body;
+        const result = await menuCollection.updateOne({ _id: itemId }, { $set: updatedItem });
+        res.json(result);
+    } catch (err) {
+        console.error('Error updating item:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
+## Delete (DELETE)
+
+```
+app.delete('/menu/:id', async (req, res) => {
+    try {
+        const itemId = req.params.id;
+        const result = await menuCollection.deleteOne({ _id: itemId });
+        res.json(result);
+    } catch (err) {
+        console.error('Error deleting item:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
+
+## Extended CRUD Operations with MongoDB Queries
+
+## Aggregation:
+Demonstrates aggregating data, such as calculating the total sum of prices for all items in the menu.
+<br>
+
+```
+app.get('/menu/pricesummary', async (req, res) => {
+    try {
+        const pipeline = [
+            {
+                $group: {
+                    _id: null,
+                    total: { $sum: '$price' }
+                }
+            }
+        ];
+        const result = await menuCollection.aggregate(pipeline).toArray();
+        res.json(result);
+    } catch (err) {
+        console.error('Error aggregating prices:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
+
+## Filtering and Sorting 
+Shows how to filter documents based on criteria (here, filtering by a specific category) and sort the results.
+<br>
+
+```
+app.get('/menu/sorted', async (req, res) => {
+    try {
+        const filter = { category: 'Coffee' }; // Example filter
+        const sortCriteria = { price: -1 }; // Sort by price descending
+        const result = await menuCollection.find(filter).sort(sortCriteria).toArray();
+        res.json(result);
+    } catch (err) {
+        console.error('Error filtering and sorting menu:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
+## Projection 
+Illustrates how to project specific fields in the result and exclude others using projection in MongoDB.
+<br>
+
+```
+app.get('/menu/projected', async (req, res) => {
+    try {
+        const projection = { name: 1, price: 1, _id: 0 }; // Only retrieve name and price, exclude _id
+        const result = await menuCollection.find().project(projection).toArray();
+        res.json(result);
+    } catch (err) {
+        console.error('Error projecting menu:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+```
