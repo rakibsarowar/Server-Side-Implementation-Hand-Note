@@ -21,7 +21,7 @@
 
 <details>
 
-<summary><b> ##Expand Table of Contents </b></summary>
+<summary><b> **Expand Table of Contents** </b></summary>
 
 - [🌴 Setting Up the Server](#-setting-up-the-server)
 - [🌿 1. Initialize Your Project:](#-1.-initialize-your-project)
