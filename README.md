@@ -23,16 +23,16 @@
 
 <summary><b> Expand Table of Contents </b></summary>
 
-- [🌴 Setting Up the Server](#-setting-up-the-server)
-- [🌿 1. Initialize Your Project:](#-1.-initialize-your-project)
-- [🌿 2. Install Dependencies:](#-2.-install-dependencies)
-- [🌿 3. Create an index.js File:](#-create-an-index.js-file)
-- [🌿 4. Initialize Express:](#-4.-initialize-express)
-- [🌿 5. Enable CORS Middleware:](#-5.-enable-cors-middleware:)
-- [🌿 6. Create an index.js File:](#-create-an-index.js-file)
-- [🌿 7. Create an index.js File:](#-create-an-index.js-file)
-- [🌿 8. Create an index.js File:](#-create-an-index.js-file)
-- [🌴 9. Create an index.js File:](#-create-an-index.js-file)
+ [🌴 Setting Up the Server](#-setting-up-the-server)
+  - [🌿 1. Initialize Your Project:](#-1.-initialize-your-project)
+  - [🌿 2. Install Dependencies:](#-2.-install-dependencies)
+  - [🌿 3. Create an index.js File:](#-create-an-index.js-file)
+  - [🌿 4. Initialize Express:](#-4.-initialize-express)
+  - [🌿 5. Enable CORS Middleware:](#-5.-enable-cors-middleware:)
+  - [🌿 6. Create an index.js File:](#-create-an-index.js-file)
+  - [🌿 7. Create an index.js File:](#-create-an-index.js-file)
+  - [🌿 8. Create an index.js File:](#-create-an-index.js-file)
+  - [🌴 9. Create an index.js File:](#-create-an-index.js-file)
 
   </details>
 
