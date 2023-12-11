@@ -1,6 +1,43 @@
-"# Server-Side-Implementation-Hand-Note" 
+# Pinia Hand note
+<br>
 
 >a detailed step-by-step guide for setting up a Node.js server using Express and MongoDB Atlas:
+
+<br>
+<div align=center>
+  
+| Key Note                    |                      |                |                       |
+|-----------------------------|----------------------|----------------|-----------------------|
+| **Emoji**                    | **Description**          | **Emoji**   | **Description**       |
+| 🌴                           | **Main Topic**       | 📌             | **Regular Note**      |
+| 🌿                           | **Paragraph**        | 💎             | **High Value info**   |
+| 📕                           | **Heavy Note**       | 🧨             | **Careful this**      |
+| 🍂                           | **Attention Note**   | ✋             | **Stop! check the point** |
+| 🏷️                          | **Regular Note**     | 🎯             | **Focus**             |
+
+</div>
+
+<!-- NO COMMENT -->
+
+<details>
+
+<summary><b> ##Expand Table of Contents </b></summary>
+
+- [🌴 Setting Up the Server](#-setting-up-the-server)
+- [🌴 1. Initialize Your Project:](#-1.-initialize-your-project)
+- [🌴 2. Install Dependencies:](#-2.-install-dependencies)
+- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
+- [🌴 4. Initialize Express:](#-4.-initialize-express)
+- [🌴 5. Enable CORS Middleware:](#-5.-enable-cors-middleware:)
+- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
+- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
+- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
+- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
+
+
+  - [🌴 Installation](#-installation)
+
+  </details>
 
 <br>
 
