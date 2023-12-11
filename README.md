@@ -24,15 +24,15 @@
 <summary><b> ##Expand Table of Contents </b></summary>
 
 - [🌴 Setting Up the Server](#-setting-up-the-server)
-- [🌴 1. Initialize Your Project:](#-1.-initialize-your-project)
-- [🌴 2. Install Dependencies:](#-2.-install-dependencies)
-- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
-- [🌴 4. Initialize Express:](#-4.-initialize-express)
-- [🌴 5. Enable CORS Middleware:](#-5.-enable-cors-middleware:)
-- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
-- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
-- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
-- [🌴 3. Create an index.js File:](#-create-an-index.js-file)
+- [🌿 1. Initialize Your Project:](#-1.-initialize-your-project)
+- [🌿 2. Install Dependencies:](#-2.-install-dependencies)
+- [🌿 3. Create an index.js File:](#-create-an-index.js-file)
+- [🌿 4. Initialize Express:](#-4.-initialize-express)
+- [🌿 5. Enable CORS Middleware:](#-5.-enable-cors-middleware:)
+- [🌿 6. Create an index.js File:](#-create-an-index.js-file)
+- [🌿 7. Create an index.js File:](#-create-an-index.js-file)
+- [🌿 8. Create an index.js File:](#-create-an-index.js-file)
+- [🌴 9. Create an index.js File:](#-create-an-index.js-file)
 
 
   - [🌴 Installation](#-installation)
@@ -41,9 +41,9 @@
 
 <br>
 
-## Setting Up the Server
+## 🌴 Setting Up the Server
 
-## 1. Initialize Your Project:
+## 🌿 1. Initialize Your Project:
 <br>
 
 ```
@@ -51,7 +51,7 @@ npm init -y
 
 ```
 
-## 2. Install Dependencies:
+## 🌿 2. Install Dependencies:
 <br>
 
 ```
@@ -59,10 +59,10 @@ npm i express cors dotenv mongodb
 
 ```
 
-## 3. Create an index.js File:
+## 🌿 3. Create an index.js File:
 Initialize your main server file.
 
-## 4. Initialize Express:
+## 🌿 4. Initialize Express:
 <br>
 
 ```
@@ -71,7 +71,7 @@ const app = express();
 
 ```
 
-## 5. Enable CORS Middleware:
+## 🌿 5. Enable CORS Middleware:
 <br>
 
 ```
@@ -80,7 +80,7 @@ app.use(cors());
 
 ```
 
-## 6. Use JSON Middleware:
+## 🌿 6. Use JSON Middleware:
 <br>
 
 ```
@@ -88,7 +88,7 @@ app.use(express.json());
 
 ```
 
-## 7. Set the Port:
+## 🌿 7. Set the Port:
 Define the port in the environment variable or default to 5000.
 <br>
 
@@ -97,7 +97,7 @@ const port = process.env.PORT || 5000;
 
 ```
 
-## 8. Create a Basic Route:
+## 🌿 8. Create a Basic Route:
 Create a simple route to check if the server is running.
 <br>
 
@@ -108,7 +108,7 @@ app.get('/', (req, res) => {
 
 ```
 
-## 9. Start the Server:
+## 🌿 9. Start the Server:
 <br>
 
 ```
@@ -120,21 +120,21 @@ app.listen(port, () => {
 
 <br>
 
-## MongoDB Atlas Setup
+## 🌴 MongoDB Atlas Setup
  
-## 1.Create a MongoDB Atlas Account:
+## 🌿 1.Create a MongoDB Atlas Account:
 => Sign up for MongoDB Atlas and log in.
 
-## 2. Set Up a Cluster:
+## 🌿 2. Set Up a Cluster:
 => Create a new cluster and configure it.
 
-## 3. Create Database User and Name the Database:
+## 🌿 3. Create Database User and Name the Database:
 => Create a database user with privileges and name your database.
 
-## 4. Environment Configuration:
+## 🌿 4. Environment Configuration:
 => Create a .env file and add it to .gitignore.
 
-## 5. Store Database Credentials in the Environment File:
+## 🌿 5. Store Database Credentials in the Environment File:
 <br>
 
 ```
@@ -142,13 +142,13 @@ DB_USER=yourDatabaseUser
 DB_PASS=yourDatabasePassword
 
 ```
-## 6. Get Connection URI:
+## 🌿 6. Get Connection URI:
 Go to "Database Access" and copy the connection string provided by MongoDB Atlas.
 
-## 7. Use Environment Variables in Code:
+## 🌿 7. Use Environment Variables in Code:
 Replace the MongoDB URI in your code with environment variables.
 
-## 8. Connect to the MongoDB Cluster:
+## 🌿 8. Connect to the MongoDB Cluster:
 Inside your server code, establish a connection to MongoDB using the MongoClient.
 <br>
 
@@ -173,7 +173,7 @@ client.connect(err => {
 });
 
 ```
-## 9. Handle Proper Closing of Connection:
+## 🌿 9. Handle Proper Closing of Connection:
 It's important to manage connections properly. Ensure you close the client when your server stops:
 <br>
 
@@ -184,7 +184,7 @@ process.on('SIGINT', () => {
 });
 
 ```
-## Full code 
+## 🌿 Full code 
 <br>
 
 ```
@@ -254,7 +254,7 @@ Note: This hand note walks you through setting up a basic Node.js server using E
 Here's an example of how CRUD operations can be implemented:
 <br>
 
- ## Create (POST):
+ ## 🌿 Create (POST):
 
 ```
 app.post('/menu', async (req, res) => {
@@ -269,7 +269,7 @@ app.post('/menu', async (req, res) => {
 });
 
 ```
-## Read (GET)
+## 🌿 Read (GET)
 
 ```
 app.get('/menu', async (req, res) => {
@@ -283,7 +283,7 @@ app.get('/menu', async (req, res) => {
 });
 
 ```
-## Update (PUT)
+## 🌿 Update (PUT)
 
 ```
 app.put('/menu/:id', async (req, res) => {
@@ -299,7 +299,7 @@ app.put('/menu/:id', async (req, res) => {
 });
 
 ```
-## Delete (DELETE)
+## 🌿 Delete (DELETE)
 
 ```
 app.delete('/menu/:id', async (req, res) => {
@@ -315,9 +315,9 @@ app.delete('/menu/:id', async (req, res) => {
 
 ```
 
-## Extended CRUD Operations with MongoDB Queries
+## 🌴 Extended CRUD Operations with MongoDB Queries
 
-## Aggregation:
+## 🌿 Aggregation:
 Demonstrates aggregating data, such as calculating the total sum of prices for all items in the menu.
 <br>
 
@@ -342,7 +342,7 @@ app.get('/menu/pricesummary', async (req, res) => {
 
 ```
 
-## Filtering and Sorting 
+## 🌿 Filtering and Sorting 
 Shows how to filter documents based on criteria (here, filtering by a specific category) and sort the results.
 <br>
 
@@ -360,7 +360,7 @@ app.get('/menu/sorted', async (req, res) => {
 });
 
 ```
-## Projection 
+## 🌿 Projection 
 Illustrates how to project specific fields in the result and exclude others using projection in MongoDB.
 <br>
 
