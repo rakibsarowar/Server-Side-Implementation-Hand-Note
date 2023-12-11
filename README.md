@@ -21,7 +21,7 @@
 
 <details>
 
-<summary><b> **Expand Table of Contents** </b></summary>
+<summary><b> Expand Table of Contents </b></summary>
 
 - [🌴 Setting Up the Server](#-setting-up-the-server)
 - [🌿 1. Initialize Your Project:](#-1.-initialize-your-project)
@@ -33,9 +33,6 @@
 - [🌿 7. Create an index.js File:](#-create-an-index.js-file)
 - [🌿 8. Create an index.js File:](#-create-an-index.js-file)
 - [🌴 9. Create an index.js File:](#-create-an-index.js-file)
-
-
-  - [🌴 Installation](#-installation)
 
   </details>
 
