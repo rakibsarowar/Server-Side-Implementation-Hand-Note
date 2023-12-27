@@ -24,15 +24,22 @@
 <summary><b> Expand Table of Contents </b></summary>
 
  [🌴 Setting Up the Server](#-setting-up-the-server)
-  - [🌿 1. Initialize Your Project:](#-1-initialize-your-project)
-  - [🌿 2. Install Dependencies:](#-2-install-dependencies)
-  - [🌿 3. Create an index.js File:](#-create-an-index-js-file)
-  - [🌿 4. Initialize Express:](#-4.-initialize-express)
-  - [🌿 5. Enable CORS Middleware:](#-5-enable-cors-middleware)
-  - [🌿 6. Create an index.js File:](#-6-create-an-index.js-file)
-  - [🌿 7. Create an index.js File:](#-7-create-an-index.js-file)
-  - [🌿 8. Create an index.js File:](#-8-create-an-index.js-file)
-  - [🌴 9. Create an index.js File:](#-9-create-an-index.js-file)
+  - [🌿 1. Initialize Your Project](#-1-initialize-your-project)
+  - [🌿 2. Install Dependencies](#-2-install-dependencies)
+  - [🌿 3. Create an index.js File](#-create-an-index-js-file)
+  - [🌿 4. Initialize Express](#-4.-initialize-express)
+  - [🌿 5. Enable CORS Middleware](#-5-enable-cors-middleware)
+  - [🌿 6. Use JSON Middleware](#-6-create-an-index.js-file)
+  - [🌿 7. Set the Port](#-7-create-an-index.js-file)
+  - [🌿 8. Create a Basic Route](#-8-create-an-index.js-file)
+  - [🌿 9. Start the Server](#-9-create-an-index.js-file)
+  - [🌿 Final Output](#-create-an-index-js-file)
+[🌴 MongoDB Atlas Setup](#-4.-initialize-express)
+  - [🌿 1.Create a MongoDB Atlas Account](#-5-enable-cors-middleware)
+  - [🌿 2. Set Up a Cluster](#-6-create-an-index.js-file)
+  - [🌿 3. Create Database User and Name the Database](#-7-create-an-index.js-file)
+  - [🌿 4. Environment Configuration](#-8-create-an-index.js-file)
+  - [🌿 5. Store Database Credentials in the Environment File](#-9-create-an-index.js-file)
 
   </details>
 
