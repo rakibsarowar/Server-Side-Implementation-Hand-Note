@@ -297,6 +297,7 @@ app.post('/menu', async (req, res) => {
       res.send(result);
     })
 ```
+
 ## 🌿 Read (GET)
 
 ```
@@ -338,6 +339,31 @@ app.put('/menu/:id', async (req, res) => {
 });
 
 ```
+
+## Partially update (Patch)
+The PATCH method in HTTP is used to apply partial modifications to a resource. It's commonly used to update specific fields of an existing resource without requiring the client to send the entire representation of that resource.
+
+In the context of a RESTful API, the PATCH method is often used when you want to update specific attributes or properties of an existing resource identified by a unique identifier (like an ID).
+
+```
+ app.patch('/users/admin/:id', async (req, res) => {
+      const id = req.params.id;
+      console.log(id);
+      const filter = { _id: new ObjectId(id) };
+      const updateDoc = {
+        $set: {
+          role: 'admin'
+        },
+      };
+
+      const result = await usersCollection.updateOne(filter, updateDoc);
+      res.send(result);
+
+    })
+
+```
+
+
 ## 🌿 Delete (DELETE)
 
 ```
